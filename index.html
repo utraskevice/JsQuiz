@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS-quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="timer">00:00:00</div>
+    <header>
+      <h1>JS-Quiz</h1>
+      <p>Do you know JS?</p>
+      <button name="Start" id="start">Find out!</button>
+      <div id="score">
+        Score:
+        <span id="correct">0</span>
+        /
+        <span id="completed">0</span>
+      </div>
+    </header>
+
+    <main>
+      <div id="board" class="hidden">
+        <div id="statement"></div>
+
+        <div id="options">
+          <button name="true" value="true">true</button>
+          <button name="false" value="false">false</button>
+        </div>
+
+        <div id="explanation"></div>
+      </div>
+      <button id="next-question" name="next-question" class="hidden">
+        Next Question
+      </button>
+      <button name="reset" id="reset" class="hidden">Try one more time!</button>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
